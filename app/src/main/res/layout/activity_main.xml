@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amount"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint=""
+        android:backgroundTint="@android:color/black"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pax"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/editTextPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint=""
+        android:backgroundTint="@android:color/black"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp">
+
+        <ToggleButton
+            android:id="@+id/toggleButtonSVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="@string/nosvs"
+            android:textOn="@string/svs"/>
+
+        <ToggleButton
+            android:id="@+id/toggleButtonGST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="@string/nogst"
+            android:textOn="@string/gst"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discount"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/editTextDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:hint=""
+            android:backgroundTint="@android:color/black"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroupPayment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButtonCash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/cash"
+                android:textColor="@color/black"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonPayNow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/paynow"
+                android:textColor="@color/black"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+
+        <Button
+            android:id="@+id/buttonSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/split" />
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/displayEach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="25dp"/>
+
+</LinearLayout>
